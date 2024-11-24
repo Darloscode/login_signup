@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+
+
+    <script src="https://kit.fontawesome.com/3bd592f027.js" crossorigin="anonymous"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="JS/validate.js"></script>
+    
+    <title>Darlos-Inicio</title>
+
+</head>
+
+<body>
+
+
+    <div class="panelone">   
+
+        <img id="logo" src="Img/logo.png">
+
+        <div class="login-up">
+
+            <form action="php/login.php" method="POST" onsubmit="return validatelogin();"> 
+
+                <h1 id="title1">Iniciar Sesión</h1>
+
+                <div class="div-in mail">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="div-email">
+                        <h5>Correo</h5>
+                        <input type="email" class="input" name="email" id='email'>
+                    </div>
+
+                </div>
+
+
+                <div class="div-in pass">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-lock-open"></i>
+                    </div>
+
+                    <div class="div-password">
+                        <h5>Contraseña</h5>
+                        <input type="password" class="input" name="pass" id="pass">
+                        <div class="eye">
+                            <span toggle="#pass" class="fa fa-fw fa-eye field-icon toggle-password" id="icon-eye"></span>
+                        </div> 
+                    </div>
+                                      
+                </div>
+
+                <a href="#" id="forget">Olvidó Contraseña</a>
+
+                <input type="submit" id="button-in" value="Iniciar sección" name="sub"> 
+
+                <div id="create"> 
+                    <p>¿Todavía no tienes una cuenta? <samp class="animated"> Registrate </samp></p>                
+                </div>
+
+            </form>
+        </div>
+
+        <div id="errorin" class="error"></div>
+        
+    </div>
+
+
+    
+    <div class="panelone">
+
+        <img id="logo" src="Img/logo.png">
+
+        <div class="login-up">
+
+            <form  action="php/register.php" method="POST" onsubmit="return validateregister();">
+
+                <h2 id="title2">Registrate</h2>
+                
+                <div class="div-in name">
+
+                    <div class="icon"> 
+                        <i class="fa-solid fa-user"></i>                        
+                    </div>
+
+                    <div class="div-name">
+                        <h5>Nombre</h5>
+                        <input type="text" class="input" name="name" id="name" autocomplete="off">
+                    </div>
+
+                </div>
+            
+                <!--<?php if(isset($nombre)) echo $nombre ?>" -->
+
+                <div class="div-in surname">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>    
+                    </div>
+
+                    <div class="div-surname">
+                        <h5>Apellidos</h5>
+                        <input type="text" class="input" name="surname" id="surname" autocomplete="off">
+                    </div>
+
+                </div>
+
+
+
+                <div class="div-in mail">
+
+                    <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="div-email">
+                        <h5>E-mail</h5>
+                        <input type="text" class="input" name="mail" id="mail" autocomplete="off">
+                    </div>                    
+                </div>            
+
+
+                
+                <div class="div-in pass">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="div-password">
+                        <h5>Contraseña</h5>
+                        <input type="password" class="input" name="pass2" id="pass2" autocomplete="off">
+                        <div class="eye">
+                            <span toggle="#pass2" class="fa fa-fw fa-eye field-icon toggle-password" id="icon-eye"></span>
+                        </div> 
+                    </div>
+
+                </div>
+
+
+
+                <div class="div-in confpass">
+
+                    <div class="icon">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+
+                    <div class="div-confpassword">
+                        <h5>Confirmar Contraseña</h5>
+                        <input type="password" class="input" name="pass3" id="pass3" autocomplete="off">
+                        <div class="eye">
+                            <span toggle="#pass3" class="fa fa-fw fa-eye field-icon toggle-password" id="icon-eye"></span>
+                        </div> 
+                    </div>                    
+                </div>
+
+
+                <input type="submit" id="button-up" value="Registrar">                
+
+                <div id="enter">
+                    <p>¿Ya tienes una cuenta? <samp class="animated"> Iniciar Sesión </samp></p>
+                </div>                
+                
+            </form>
+        </div>        
+
+        <div id="errorup" class="error"></div>
+        
+    </div>
+
+    <script type="text/javascript" src="JS/main.js"></script>
+
+</body>
+</html>

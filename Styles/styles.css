@@ -1,0 +1,341 @@
+*{
+	padding: 0;
+	margin: 0;	
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    background-color: #729abf; 
+    /*margin: 0px;
+    padding: 0px;
+    overflow: hidden;*/        
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.panelone:nth-child(2){
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%; 
+    margin-bottom: 6%;   
+    width: 364px;    
+    height: auto;    
+    background-color: rgba(0, 0, 0, 0.6);  
+    color: #ffffff;  
+    border: solid;
+    padding: 0px 2rem;           
+    position: relative; 
+}
+
+.panelone:nth-child(1){
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%; 
+    margin-bottom: 6%;   
+    width: 364px;    
+    height: auto;    
+    background-color: rgba(0, 0, 0, 0.6);  
+    color: #ffffff;  
+    border: solid;
+    padding: 0px 2rem;       
+    display: block;    
+    position: relative;    
+}
+
+#logo{    
+    margin-top: -100px;
+    width: 190px;
+    height: auto;
+    border-radius: 50px;
+    position: absolute;    
+    left: calc(100% - 71%);
+}
+
+#title1{
+    margin-top: 18%;
+    margin-bottom: -15px;
+    padding: 0px 0px 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+    font-size: 40px;
+}
+
+.div-in.pass.focus > .div-password > .eye > #icon-eye{
+    color: #38d39f;    
+}
+
+#forget{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    margin-top: -10px;
+    color: #A2A1A1;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+
+#forget:hover{
+    color: #38d39f;
+}
+
+#button-in{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;   
+    background-image: linear-gradient(to right, #109468, #6edbb7, #11c086);
+    /*background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);*/
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all .5s ease;    
+}
+
+#button-in:hover{
+    background-position: right;
+}
+
+#button-in:active{
+    transform: scale(0.6);
+}
+
+.panelone{
+    display: none;
+}
+
+#create{
+    margin-bottom: 20px;
+}
+
+#enter{
+    margin-bottom: 20px;
+}
+
+.animated{
+    cursor: pointer;
+}
+
+.error{        
+    margin-left: auto;
+    margin-right: auto;    
+    width: 320px;
+    height: auto;    
+    background-color: rgba(8, 8, 8, 0.6);
+    color: white;
+    top: 25%;
+    left: 144%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 0px 1rem;   
+    font-size: 20px;
+}
+
+#title2{
+    margin-top: 80px;
+    margin-bottom: -15px;
+    padding: 0px 0px 20px;
+    text-align: center;        
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+}
+
+.div-in{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #FFFFF1;
+    /*border-bottom: 2px solid #000000;*/
+    margin-top: 0;
+}
+
+.icon{
+    font-size: 20px;
+    margin-bottom: -10px;
+    color: #FFFFF1;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-in.focus > .icon > i{
+    color: #38d39f;
+}
+
+.icon i{
+    transition: .3s;
+}
+
+h5{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFF1;
+    /*color: #999;*/
+    font-size: 18px;
+    transition: .3s;
+}
+
+.div-in.surname > .icon > i{
+    margin-left: 15px;
+}
+
+.div-in.surname > .div-surname > h5{
+    margin-left: 14px;
+}
+
+.div-in.surname > .div-surname > input{
+    margin-left: 14px;
+    width: 80%;
+}
+
+.div-in.surname{    
+    width: 50%;    
+}
+
+.div-in.name > .icon > i{
+    margin-left: 15px;
+}
+
+.div-in.name > .div-name > h5{
+    margin-left: 14px;
+}
+
+.div-in.name > .div-name > input{
+    margin-left: 14px;
+    width: 80%;
+}
+
+.div-in.name{    
+    width: 45%; 
+    margin-right: 18px;
+    float: left;    
+}
+
+.div-in.confpass.focus > .div-confpassword > .eye > #icon-eye{
+    color: #38d39f;    
+}
+
+#button-up{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;   
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all .5s ease;    
+}
+
+#button-up:hover{
+    background-position: right;
+}
+
+#button-up:active{
+    transform: scale(0.6);
+}
+
+.div-in > div > input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px 0px 0px 14px;
+    /*padding: 0.5rem 0.7rem 20px 20px;*/
+    font-size: 1.2rem;
+    color: #000000;
+    /*color: #555;*/
+    font-family: 'poppins', sans-serif;
+}
+
+.div-in.focus > div > h5{
+    top: -5px;
+    font-size: 15px;
+}
+
+p{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: #A2A1A1;
+    text-align: center;
+    font-family: serif;
+}
+
+samp:hover{
+    color: #38d39f;
+}
+
+#icon-eye{
+    position: relative;
+    font-size: 20px;
+    margin-left: 310px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #FFFFF1;
+}
+
+.fa-solid.fa-circle-exclamation{
+    color: rgb(253, 42, 42);
+}
+
+
+/*Prueba*/
+.div-in > div{
+    margin-bottom: -9px;
+    position: relative;
+    height: 45px;
+}
+
+
+
+.div-in:before, .div-in:after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #38d39f;
+    transition: .4s;
+}
+
+.div-in:before{
+    right: 50%;
+}
+
+.div-in:after{
+    left: 50%;
+}
+
+.div-in.focus:before, .div-in.focus:after{
+    width: 50%;
+}
+
+.div-in.pass{
+    margin-bottom: 20px;
+}

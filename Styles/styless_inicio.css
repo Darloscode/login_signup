@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+#number{            
+	color: rgba(255, 0, 0, 0);
+}
+
+#welcome{
+	margin-top: 20px;
+	font-size: 150%;
+	
+}
+
+#name-main{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(10, 8, 5);
+    font-size: 40px;
+}
+
+body{   
+    background-image: url(../Img/fondo4.jpg);
+    /*background-color: rgba(66, 187, 243, 0.76);*/
+	background-size: cover;
+}
+
+.nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(51, 51, 51, 0.733);
+	font-size: 20px;
+	margin-top: 0px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(82, 181, 228, 0.452);
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: rgba(134, 204, 236, 0.452);;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+.nav > ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 180%;
+}
+
+.nav > ul > li > ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80%;
+}
+
+
